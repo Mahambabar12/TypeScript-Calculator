@@ -1,4 +1,4 @@
-#! /ust/bin/env node
+#! /usr/bin/env node
 //SHABANG
 
 import inquirer from "inquirer";
@@ -22,7 +22,7 @@ else if (answer.operator === "Multiplication")
 {
     console.log (answer.firstNumber * answer.secondNumber);
 }
-else if (answer.operator === "Division ")
+else if (answer.operator === "Division")
 {
     console.log (answer.firstNumber / answer.secondNumber);
 }

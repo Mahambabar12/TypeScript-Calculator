@@ -2,10 +2,11 @@
 //SHABANG
 
 import inquirer from "inquirer";
+import chalk from "chalk";
 
 const answer = await inquirer.prompt([
-    {message: "Enter First number", type: "number", name: "firstNumber"},
-    {message: "Enter Second number", type: "number", name: "secondNumber"},
+    {message: chalk.greenBright("Enter First number"), type: "number", name: "firstNumber"},
+    {message: chalk.magentaBright("Enter Second number"), type: "number", name: "secondNumber"},
     {message: "select the operator", type: "list", name: "operator", choices: ["Addition", "subtraction", "Multiplication", "Division"]}
 ])
 
